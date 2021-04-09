@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Soil List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+    <link rel="icon" type="image/png" th:href="@{/img/icon.png}"/>
+</head>
+<body>
+    <h2>Soil List</h2>
+
+    <table  class="table">
+            <thead align="center">
+                <tr>
+                    <td>id</td>
+                    <td>uuid_t</td>
+                    <td>p_name</td>
+                    <td>p_type</td>
+                    <td>p_type_fk</td>
+                </tr>
+            </thead>
+
+            <tbody align="center">
+                <tr th:each="SoilDto : ${soilDtoList}" th:object="${soilDto}">
+                    <td th:text="${SoilDto.id}">...</td>
+                    <td th:text="${SoilDto.uuid_t}">...</td>
+                    <td th:text="${SoilDto.p_name}">...</td>
+                    <td th:text="${SoilDto.p_type}">...</td>
+                    <td th:text="${SoilDto.p_type_fk}">...</td>
+                </tr>
+            </tbody>
+    </table>
+
+</body>
+</html>
