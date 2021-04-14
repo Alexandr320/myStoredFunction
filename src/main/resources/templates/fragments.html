@@ -10,7 +10,7 @@
 <body>
     <h3>Soil List</h3>
 
-    <div id="add"><a th:href="add" class="btn btn-primary">Add row</a></div>
+    <div id="add"><a href="#" class="btn btn-primary">Add row</a></div>
 
     <table  class="table">
             <thead>
@@ -30,8 +30,8 @@
                     <td th:text="*{pName}">...</td>
                     <td th:text="*{pType}">...</td>
                     <td th:text="*{pTypeFk}">...</td>
-                    <td><a th:href="${'/update/__*{id}__'}" class="btn btn-warning">Update</a></td>
-                    <td><a th:href="${'/delete/__*{id}__'}" class="btn btn-danger">Delete</a></td>
+                    <td><a href="#" class="btn btn-warning">Update</a></td>
+                    <td><a href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
             </tbody>
     </table>

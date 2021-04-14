@@ -1,4 +1,19 @@
-h1, h2  {
+h1, h2, h3  {
     color:#0000FF;
     text-align: center;
+    font-weight: bold;
+        }
+table   {
+    text-align: center;
+        }
+table thead {
+        font-weight: bold;
+        }
+#add {
+        float:right;
+        margin-right: 3%;
+        }
+#return {
+        float:right;
+        margin-right: 3%;
         }
