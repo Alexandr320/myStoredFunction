@@ -12,6 +12,9 @@ table thead {
 table tbody tr td input {
         text-align: center;
         }
+table tbody tr td #uuidT {
+        width: 280px;
+        }
 #add {
         float:right;
         margin-right: 3%;
