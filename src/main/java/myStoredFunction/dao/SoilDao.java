@@ -30,8 +30,9 @@ public class SoilDao {
     }
 
     public Soil findById(Long id) {
+        String queryStr = String.format("select id, uuid_t, p_name, p_type, p_type_fk from f_sel_eio_table_302_ex(ARRAY[%d]::int8[]);", id);
         return namedParameterJdbcTemplate.queryForObject(
-                "select id, uuid_t, p_name, p_type from eio_table_302 where id = :id;",
+                queryStr,
                 new MapSqlParameterSource("id", id),
                 SoilMapper.INSTANCE
         );
