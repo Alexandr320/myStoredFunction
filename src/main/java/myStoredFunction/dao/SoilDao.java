@@ -51,8 +51,8 @@ public class SoilDao {
         );
     }
 
-    public Integer delete(Long id) {
-        return namedParameterJdbcTemplate.queryForObject(
+    public void delete(Long id) {
+        namedParameterJdbcTemplate.queryForObject(
                 "select f_del_eio_table_302(:id);",
                 new MapSqlParameterSource("id", id),
                 Integer.class

@@ -9,6 +9,9 @@ table   {
 table thead {
         font-weight: bold;
         }
+table tbody tr td input {
+        text-align: center;
+        }
 #add {
         float:right;
         margin-right: 3%;

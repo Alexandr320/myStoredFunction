@@ -15,26 +15,26 @@
     <form th:action="@{/update}" method="post" th:object="${soil}">
         <table class="table">
             <thead>
-            <tr>
-                <td>id</td>
-                <td>uuid_t</td>
-                <td>p_name</td>
-                <td>p_type</td>
-                <td>p_type_fk</td>
-            </tr>
+                <tr>
+                    <td>id</td>
+                    <td>uuid_t</td>
+                    <td>p_name</td>
+                    <td>p_type</td>
+                    <td>p_type_fk</td>
+                </tr>
             </thead>
 
             <tbody>
-            <tr>
-                <td><input type="text" th:field="*{id}" readonly="true" /></td>
-                <td><input type="text" th:field="*{uuidT}" readonly="true" style="width: 280px;" /></td>
-                <td><input type="text" th:field="*{pName}" /></td>
-                <td><input type="text" th:field="*{pType}" readonly="true" /></td>
-                <td><input type="text" th:field="*{pTypeFk}" readonly="true" /></td>
-            </tr>
-            <tr>
-                <td><input type="submit" class="btn btn-primary" value="Update" /></td>
-            </tr>
+                <tr>
+                    <td><input type="text" th:field="*{id}" readonly="true" /></td>
+                    <td><input type="text" th:field="*{uuidT}" readonly="true" style="width: 280px;" /></td>
+                    <td><input type="text" th:field="*{pName}" /></td>
+                    <td><input type="text" th:field="*{pType}" readonly="true" /></td>
+                    <td><input type="text" th:field="*{pTypeFk}" readonly="true" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="btn btn-primary" value="Update" /></td>
+                </tr>
             </tbody>
         </table>
     </form>
