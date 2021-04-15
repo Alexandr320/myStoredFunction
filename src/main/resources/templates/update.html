@@ -26,17 +26,15 @@
 
             <tbody>
                 <tr>
-                    <td><input type="text" th:field="*{id}" readonly="true" /></td>
-                    <td id="uuidT"><input type="text" th:field="*{uuidT}" readonly="true" /></td>
+                    <td><input class="secondary" type="text" th:field="*{id}" readonly="true" /></td>
+                    <td id="uuidT"><input class="secondary" type="text" th:field="*{uuidT}" readonly="true" /></td>
                     <td><input type="text" th:field="*{pName}" /></td>
-                    <td><input type="text" th:field="*{pType}" readonly="true" /></td>
-                    <td><input type="text" th:field="*{pTypeFk}" readonly="true" /></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" class="btn btn-primary" value="Update" /></td>
+                    <td><input class="secondary" type="text" th:field="*{pType}" readonly="true" /></td>
+                    <td><input class="secondary" type="text" th:field="*{pTypeFk}" readonly="true" /></td>
                 </tr>
             </tbody>
         </table>
+        <div id="add"><input type="submit" class="btn btn-primary" value="Update" /></div>
     </form>
 
 </body>
